@@ -29,8 +29,11 @@ console.log("Hello, TypeScript!");
  // ANNOTATIONS
 // --------------------------------------------------
 
-// Annotations are used to explicitly specify the type of a variable, function parameter, or return value.
+//* Annotations are used to explicitly specify the type of a variable, function parameter, or return value.
 
 let age: number = 20; 
 //here is the beutiful part
 // age = 'a' //! type 'string' is not assignable to type 'number'
+
+if(age < 50) 
+    age += 10;
