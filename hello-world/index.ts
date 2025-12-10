@@ -23,3 +23,14 @@ console.log("Hello, TypeScript!");
     // when we push the code to github, we usually ignore the compiled .js files using .gitignore
     // but in production, we deploy the compiled .js files to the server or hosting platform not the .ts files
  // but for this simple example, we are using default settings
+
+
+ // --------------------------------------------------
+ // ANNOTATIONS
+// --------------------------------------------------
+
+// Annotations are used to explicitly specify the type of a variable, function parameter, or return value.
+
+let age: number = 20; 
+//here is the beutiful part
+// age = 'a' //! type 'string' is not assignable to type 'number'
