@@ -6,6 +6,9 @@
 // You add a type variable, like <T>, and use it inside your function, interface,
 // or class. The caller picks the actual type, or TypeScript can infer it.
 // Keep it simple and clear.
+
+
+// simple tip: think of it like parameters but for types
 // --------------------------------------------------
 
 // --------------------------------------------------
