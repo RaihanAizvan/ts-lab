@@ -1,6 +1,6 @@
-# TS-LAB 📘
+# TS-LAB 
 
-A comprehensive, beginner-friendly guide to learning TypeScript with practical examples and detailed explanations. This repository serves as a complete reference for understanding TypeScript's core concepts, from basic types to advanced features.
+A simple guide to learn TypeScript with practical examples and detailed explanations. This repo serves as a complete reference for understanding TypeScript's core concepts, from basic types to intermediate features.
 
 ##  Table of Contents
 
@@ -36,7 +36,7 @@ TypeScript is a statically-typed superset of JavaScript developed and maintained
 5. **Strict Null Checking** - Safer handling of null and undefined values
 6. **Modern JavaScript Support** - Use latest ES features with transpilation
 
-## 📚 Prerequisites
+##  Prerequisites
 
 Before diving into this guide, you should have:
 
@@ -57,14 +57,14 @@ Before diving into this guide, you should have:
    - Install globally: `npm install -g typescript`
    - Verify installation: `tsc --version`
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Installation
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd <repository-name>
+   git clone https://github.com/RaihanAizvan/ts-lab.git
+   cd ts-lab
    ```
 
 2. **Install TypeScript globally** (if not already installed)
@@ -88,10 +88,10 @@ Each TypeScript file in this project contains educational examples with detailed
 cd src
 
 # Compile a specific TypeScript file
-tsc types.ts
+tsc 02-types.ts
 
 # Run the compiled JavaScript file
-node types.js
+node 02-types.js
 ```
 
 #### Method 2: Use Project Configuration
@@ -101,7 +101,7 @@ node types.js
 tsc
 
 # Compiled files will be in the 'dist' directory
-node dist/types.js
+node dist/02-types.js
 ```
 
 #### Method 3: Watch Mode (Auto-compile on save)
@@ -111,7 +111,7 @@ node dist/types.js
 tsc --watch
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 .
@@ -119,62 +119,70 @@ tsc --watch
 ├── tsconfig.json           # TypeScript compiler configuration
 ├── README.md               # This file
 └── src/
-    ├── hello-world/        # Getting started with TypeScript
-    │   ├── intro.ts        # Introduction and setup guide
-    │   ├── index.ts        # Hello World example
-    │   └── type-checking.ts # Understanding static vs dynamic typing
+    ├── 01-hello-world/       # Getting started with TypeScript
+    │   ├── intro.ts          # Introduction and setup guide
+    │   ├── index.ts          # Hello World example
+    │   └── type-checking.ts  # Understanding static vs dynamic typing
     │
-    ├── types.ts            # Built-in types (number, string, boolean, etc.)
-    ├── arrays.ts           # Working with typed arrays
-    ├── tuples.ts           # Fixed-length arrays with specific types
-    ├── enums.ts            # Enumerated types
-    ├── objects.ts          # Object type annotations and interfaces
-    ├── functions.ts        # Function type annotations
-    ├── union.ts            # Union types (coming soon)
-    ├── intersection.ts     # Intersection types
-    ├── literals.ts         # Literal types
-    ├── nullables.ts        # Handling null and undefined (coming soon)
-    └── optional-chaining.ts # Safe property access
+    ├── 02-types.ts           # Built-in types (same as js)
+    ├── 03-arrays.ts          # Working with typed arrays
+    ├── 04-objects.ts         # Object type annotations
+    ├── 05-functions.ts       # Function type annotations
+    ├── 06-tuples.ts          # Fixed-length arrays with specific types
+    ├── 07-enums.ts           # Enumerated types
+    ├── 08-union.ts           # Union types
+    ├── 09-intersection.ts    # Intersection types
+    ├── 10-literals.ts        # Literal types
+    ├── 11-optional-chaining.ts # Safe property access
+    ├── 12-nullables.ts       # Handling null and undefined
+    ├── 13-interfaces.ts      # Interfaces (objects, methods, extends)
+    ├── 14-classes.ts         # Classes basics
+    ├── 15-abstract_class.ts  # Abstract classes
+    ├── 16-generics.ts        # Generics interfaces, classes
+    ├── 17-type-guards.ts     # Type guards and narrowing
+    ├── 18-dependency-injection.ts # Simple DI patterns
+    ├── 19-utility-types.ts   # Built-in utility types
+    └── OOPS-application.ts   # OOP style example
 ```
 
-## 🎓 Core Concepts Covered
+##  Core Concepts Covered
 
-### 1. **Hello World & Basics** (`src/hello-world/`)
+### 1. **Hello World & Basics** (`src/01-hello-world/`)
 - Setting up TypeScript
 - Understanding transpilation
 - First TypeScript program
 - Static vs Dynamic typing
 - Type annotations syntax
 
-### 2. **Built-in Types** (`src/types.ts`)
+### 2. **Built-in Types** (`src/02-types.ts`)
 - **Primitives**: `number`, `string`, `boolean`
 - **Special Types**: `null`, `undefined`, `void`, `never`
 - **Flexible Types**: `any`, `unknown`
 - Type annotations and inference
 - When to use each type
 
-### 3. **Arrays** (`src/arrays.ts`)
+### 3. **Arrays** (`src/03-arrays.ts`)
 - Array type syntax: `type[]` vs `Array<type>`
 - Arrays of primitives (numbers, strings, booleans)
 - Generic array types
 - Readonly arrays
 - Type safety with arrays
 
-### 4. **Tuples** (`src/tuples.ts`)
+### 4. **Tuples** (`src/06-tuples.ts`)
 - Fixed-length arrays with specific types
 - Optional tuple elements
 - Rest elements in tuples
 - Readonly tuples
 - Practical use cases
 
-### 5. **Enums** (`src/enums.ts`)
+### 5. **Enums** (`src/07-enums.ts`)
 - Numeric enums (default and custom values)
 - String enums
 - Auto-incrementing behavior
 - Reverse mapping
 - When to use enums
 
-### 6. **Objects** (`src/objects.ts`)
+### 6. **Objects** (`src/04-objects.ts`)
 - Object type annotations
 - Type aliases for object shapes
 - Optional properties (`?`)
@@ -182,7 +190,7 @@ tsc --watch
 - Index signatures
 - Nested objects
 
-### 7. **Functions** (`src/functions.ts`)
+### 7. **Functions** (`src/05-functions.ts`)
 - Parameter type annotations
 - Return type annotations
 - Optional parameters
@@ -191,39 +199,39 @@ tsc --watch
 - Function types and type aliases
 - Higher-order functions
 
-### 8. **Union Types** (`src/union.ts`)
+### 8. **Union Types** (`src/08-union.ts`)
 - Combining multiple types with `|`
 - Type narrowing
 - Working with union types
 - Discriminated unions
 
-### 9. **Intersection Types** (`src/intersection.ts`)
+### 9. **Intersection Types** (`src/09-intersection.ts`)
 - Combining types with `&`
 - Merging object types
 - Property conflicts
 - Practical examples with mixins
 
-### 10. **Literal Types** (`src/literals.ts`)
+### 10. **Literal Types** (`src/10-literals.ts`)
 - String literals
 - Numeric literals
 - Boolean literals
 - Union of literals
 - Practical applications (status codes, directions, etc.)
 
-### 11. **Optional Chaining** (`src/optional-chaining.ts`)
+### 11. **Optional Chaining** (`src/11-optional-chaining.ts`)
 - Safe property access with `?.`
 - Optional method calls
 - Array element access
 - Combining with nullish coalescing (`??`)
 - Practical examples
 
-### 12. **Nullable Types** (`src/nullables.ts`)
+### 12. **Nullable Types** (`src/12-nullables.ts`)
 - Handling `null` and `undefined`
 - Strict null checking
 - Type guards
 - Non-null assertion operator (`!`)
 
-## 💻 Usage
+##  Usage
 
 ### Example Workflow
 
@@ -235,7 +243,7 @@ tsc --watch
 ### Example: Learning About Arrays
 
 ```typescript
-// Open src/arrays.ts
+// Open src/03-arrays.ts
 // Read through the examples
 // Try modifying the code:
 
@@ -243,57 +251,69 @@ let numbers: number[] = [1, 2, 3, 4, 5];
 numbers.push(6); // ✓ Valid
 
 // Uncomment to see error:
-// numbers.push("hello"); // ✗ Error: Argument of type 'string' 
-                          //   is not assignable to parameter of type 'number'
+// numbers.push("hello"); // ✗ Error: Argument of type 'string' is not assignable to parameter of type 'number'
 ```
 
 Compile and run:
-```bash
-tsc src/arrays.ts
-node src/arrays.js
+```
+tsc src/03-arrays.ts
+node src/03-arrays.js
 ```
 
-## 🗺️ Learning Path
+##  Learning Path
 
 ### For Complete Beginners
 
-1. **Start Here**: `src/hello-world/intro.ts`
+1. **Start Here**: `src/01-hello-world/intro.ts`
    - Understand what TypeScript is
    - Learn about setup and installation
 
-2. **First Program**: `src/hello-world/index.ts`
+2. **First Program**: `src/01-hello-world/index.ts`
    - Write and run your first TypeScript program
    - Understand compilation process
 
-3. **Type Checking**: `src/hello-world/type-checking.ts`
+3. **Type Checking**: `src/01-hello-world/type-checking.ts`
    - Learn why types matter
    - Static vs dynamic typing
 
-4. **Basic Types**: `src/types.ts`
+4. **Basic Types**: `src/02-types.ts`
    - Master fundamental types
    - Practice type annotations
 
-5. **Collections**: Start with `src/arrays.ts`, then `src/tuples.ts`
+5. **Collections**: Start with `src/03-arrays.ts`, then `src/06-tuples.ts`
    - Work with typed collections
    - Understand immutability
 
-6. **Enums**: `src/enums.ts`
+6. **Enums**: `src/07-enums.ts`
    - Named constants
    - Practical applications
 
-7. **Objects**: `src/objects.ts`
+7. **Objects**: `src/04-objects.ts`
    - Structure complex data
    - Type aliases
 
-8. **Functions**: `src/functions.ts`
+8. **Functions**: `src/05-functions.ts`
    - Type-safe functions
    - Function types
 
-9. **Advanced Types**: `src/union.ts`, `src/intersection.ts`, `src/literals.ts`
+9. **Advanced Types**: `src/08-union.ts`, `src/09-intersection.ts`, `src/10-literals.ts`
    - Compose complex types
    - Type narrowing
 
-10. **Practical Features**: `src/optional-chaining.ts`, `src/nullables.ts`
+10. **Practical Features**: `src/11-optional-chaining.ts`, `src/12-nullables.ts`
+
+11. **Interfaces and Classes**: `src/13-interfaces.ts`, `src/14-classes.ts`, `src/15-abstract_class.ts`
+    - Describe shapes with interfaces, build behavior with classes, and reuse with abstract classes
+
+12. **Generics and Type Guards**: `src/16-generics.ts`, `src/17-type-guards.ts`
+    - Reusable types and safe narrowing patterns
+
+13. **Dependency Injection**: `src/18-dependency-injection.ts`
+    - Pass dependencies from outside for easier testing and swapping
+
+14. **Utility Types (optional)**: `src/19-utility-types.ts`
+    - Learn built-in helpers like Partial, Pick, Omit, Readonly
+
     - Real-world patterns
     - Safe code practices
 
@@ -301,11 +321,11 @@ node src/arrays.js
 
 If you already know JavaScript:
 
-1. `src/hello-world/type-checking.ts` - Understand the benefits
-2. `src/types.ts` - Quick overview of type system
-3. `src/objects.ts` & `src/functions.ts` - Type your existing patterns
-4. `src/union.ts` & `src/intersection.ts` - Advanced type composition
-5. `src/optional-chaining.ts` - Modern JavaScript features with types
+1. `src/01-hello-world/type-checking.ts` - Understand the benefits
+2. `src/02-types.ts` - Quick overview of type system
+3. `src/04-objects.ts` & `src/05-functions.ts` - Type your existing patterns
+4. `src/08-union.ts` & `src/09-intersection.ts` - Advanced type composition
+5. `src/11-optional-chaining.ts` - Modern JavaScript features with types
 
 ## ⚙️ TypeScript Configuration
 
